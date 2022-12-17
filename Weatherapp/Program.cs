@@ -36,7 +36,7 @@ namespace Weatherapp
 
             var wheatherqoute = JObject.Parse(response).GetValue("current").ToString();
             Console.WriteLine($"City :{cityname}  {wheatherqoute}");
-                Console.WriteLine("DO YOU LIKE TO ENTER NETOHER CITY YES/NO");
+                Console.WriteLine("DO YOU LIKE TO ENTER ANTOHER CITY YES/NO");
                 var usersleections = Console.ReadLine();
 
                 if (usersleections.ToLower() == "no") 
